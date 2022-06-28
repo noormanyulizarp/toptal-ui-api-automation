@@ -1,6 +1,3 @@
-# toptal-ui-api-automation
-for top tal testing purpose only
-
 # Youtube Music Automation
 
 Here was the source code for music.youtube.com. The automation test was build based on `selenium` using `robot-framework` as the framework, it has `.robot` script and it's configuration, robot framework are based paython
