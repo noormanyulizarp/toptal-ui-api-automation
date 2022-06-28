@@ -1,0 +1,13 @@
+urllib3
+selenium
+lxml
+requests
+robotframework
+robotframework-appiumlibrary
+robotframework-faker
+robotframework-seleniumlibrary
+robotframework-selenium2library
+robotframework-pabot
+robotframework-debuglibrary
+robotframework-requests
+robotframework-xvfb
