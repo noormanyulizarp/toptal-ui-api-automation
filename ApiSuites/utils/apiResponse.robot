@@ -2,6 +2,12 @@
 Resource               ../resources/importer.robot
 
 *** Keyword ***
+Load Payload
+    ${payload}                  Get File        ${assertionjson}
+    ${param}                    Evaluate        json.loads('''${payload}''')        json
+    Set Suite Variable          ${payload}
+    Set Suite Variable          ${param}
+
 Response Should Be
     [Arguments]             ${value}=200                            ${reason}=OK
     Run Keyword If          '${value}'=='200'
@@ -29,6 +35,7 @@ Response Body Should Be Equals
     END
 
 Comparing With Expected JSON
+    [Arguments]             ${response_json}=${response_json}       ${expected}=${expected}
     ${response_json}=       Convert To Json         ${response_json}
     ${expected_json}=       Convert To Json         ${expected}
     Compare With Expected Json                      ${response_json}    ${expected_json}
