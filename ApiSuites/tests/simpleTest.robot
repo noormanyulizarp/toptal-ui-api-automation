@@ -41,4 +41,3 @@ Simpe Test Three
 
     apiResponse.Response Should Be                          200       OK
     Comparing With Expected JSON    ${response.json()}      ${expected["simplethree"]}
-
