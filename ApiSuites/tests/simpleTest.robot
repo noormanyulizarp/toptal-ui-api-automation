@@ -32,7 +32,7 @@ Simpe Test Three
     [Tags]                      ghibli-api
 
     ${expected_json}            Get File                    ApiSuites/resources/assertion.json
-    ${expected}                  Evaluate                   json.loads('''${expected_json}''')        json
+    ${expected}                 Evaluate                   json.loads('''${expected_json}''')        json
 
     Create Session              simple-session              ${base_url}${simple_url_two}    verify=True
     ${response}=                Get Request                 simple-session                  /0f8ef701-b4c7-4f15-bd15-368c7fe38d0a
@@ -40,6 +40,5 @@ Simpe Test Three
     Set Test Variable           ${response}
 
     apiResponse.Response Should Be                          200       OK
-
     Comparing With Expected JSON    ${response.json()}      ${expected["simplethree"]}
 

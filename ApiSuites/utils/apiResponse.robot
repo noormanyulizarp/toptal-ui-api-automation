@@ -36,6 +36,7 @@ Response Body Should Be Equals
 
 Comparing With Expected JSON
     [Arguments]             ${response_json}=${response_json}       ${expected}=${expected}
+
     ${response_json}=       Convert To Json         ${response_json}
     ${expected_json}=       Convert To Json         ${expected}
     Compare With Expected Json                      ${response_json}    ${expected_json}
