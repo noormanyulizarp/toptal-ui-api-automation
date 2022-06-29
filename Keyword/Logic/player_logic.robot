@@ -24,7 +24,7 @@ Pause From Bottom Left Player Controller
     Press Pause Button From Bottom Left Player Controller
 
 Wait Player For A Seconds
-    [Arguments]         ${seconds}=${SLEEP_FOR_5_SECOND}
+    [Arguments]         ${seconds}=${SLEEP_FOR_10_SECOND}
     Sleep               ${seconds}
 
 Make Sure Player Was Played

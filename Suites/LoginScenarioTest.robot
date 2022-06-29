@@ -7,9 +7,3 @@ Suite Teardown      Close All Browsers
 Able To Login On Web music.youtube.com Use Google Account
     Open Browser With Specific URL     ${YOUTUBEMUSICURL}
     Login With Eligible User
-
-
-
-
-
-

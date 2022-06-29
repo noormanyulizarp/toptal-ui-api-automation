@@ -35,7 +35,7 @@ Insert Password User
     Sleep                   ${SLEEP_FOR_5_SECOND}
     SeleniumLibrary.Wait Until Page Contains Element    ${input_password_selector}      timeout=${MEDIUM_TIMEOUT}
     SeleniumLibrary.Wait Until Element Is Visible       ${input_password_selector}      timeout=${MEDIUM_TIMEOUT}
-    Sleep                   ${SLEEP_FOR_2_SECOND}
+    Sleep                   ${SLEEP_FOR_5_SECOND}
     SeleniumLibrary.Input Text                          ${input_password_selector}      ${PASSWORD}
 
 Verify Successfully Login
