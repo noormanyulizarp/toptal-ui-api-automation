@@ -1,5 +1,5 @@
 {
-  "simple": {
+  "movie_mocked_data": {
     "id": "58611129-2dbc-4a81-a72f-77ddfc1b1b49",
     "title": "My Neighbor Totoro",
     "original_title": "となりのトトロ",
@@ -37,7 +37,8 @@
     ],
     "url": "https://ghibliapi.herokuapp.com/films/58611129-2dbc-4a81-a72f-77ddfc1b1b49"
   },
-  "simpletwo":{
+
+  "people_mocked_data":{
   "id": "986faac6-67e3-4fb8-a9ee-bad077c2e7fe",
   "name": "Satsuki Kusakabe",
   "gender": "Female",
@@ -50,7 +51,7 @@
   "species": "https://ghibliapi.herokuapp.com/species/af3910a6-429f-4c74-9ad5-dfe1c4aa04f2",
   "url": "https://ghibliapi.herokuapp.com/people/986faac6-67e3-4fb8-a9ee-bad077c2e7fe"
   },
-  "simplethree": {
+  "another_people_mocked_data": {
     "id": "0f8ef701-b4c7-4f15-bd15-368c7fe38d0a",
     "name": "Kanta Ōgaki",
     "gender": "Male",

@@ -34,7 +34,7 @@ Insert Password User
     [Arguments]             ${PASSWORD}=${PASSWORD}
     Sleep                   ${SLEEP_FOR_5_SECOND}
     SeleniumLibrary.Wait Until Page Contains Element    ${input_password_selector}      timeout=${MEDIUM_TIMEOUT}
-    SeleniumLibrary.Wait Until Element Is Visible       ${input_password_selector}      timeout=${MEDIUM_TIMEOUT}
+    SeleniumLibrary.Wait Until Element Is Visible       ${input_password_selector}      timeout=${LONG_TIMEOUT}
     Sleep                   ${SLEEP_FOR_5_SECOND}
     SeleniumLibrary.Input Text                          ${input_password_selector}      ${PASSWORD}
 

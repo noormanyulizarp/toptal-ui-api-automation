@@ -2,6 +2,7 @@
 #Automation
 ${FAST_TIMEOUT}         2
 ${MEDIUM_TIMEOUT}       3
+${LONG_TIMEOUT}         6
 ${DEFAULT_TIMEOUT}      5
 ${SLEEP_FOR_5_SECOND}   5
 ${SLEEP_FOR_10_SECOND}  10
