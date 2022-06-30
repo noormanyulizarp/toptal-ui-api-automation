@@ -165,3 +165,27 @@ Make Sure User Able To Play Next Song
     Hit Next Button
     Set Current Song Information
     Verify Current Playing
+
+
+Make Sure Search Button Are Visible
+    Wait Until Element Is Visible           id=search_button_homepage
+
+Click Search Button
+    ${status}                               Run Keyword And Return Status           Make Sure Search Button Are Visible
+    Run Keyword If                          ${status} 
+    ...                                     Click Element                           id=search_button_homepage
+
+Make Sure Search Input Are Visible
+    Wait Until Element Is Visible           id=search_form_input_homepage
+
+Input On Search
+    Input Text                              id=search_form_input_homepage           Toptal
+
+Make Sure DuckDuckGo Search Are Correct
+    ${duckduckgoinputed}                    Get Text                                id=search_form_input
+    Should Be Equal                         ${duckduckgoinputed}                    Toptal
+
+Go To Toptal And Make Sure Correct
+    Wait Until Element Is Visible          xpath=*//[contains,'https://www.toptal.com']
+    Click Element                          xpath=*//[contains,'https://www.toptal.com']
+    SeleniumLibrary.Wait Until Element Is Visible 	 xpath=*//[contains,'https://www.toptal.com']

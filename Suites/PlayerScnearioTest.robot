@@ -33,3 +33,12 @@ User Able to Play Next And Previous Song On music.youtube.com Web Player
     Make Sure Player Was Played
     Make Sure User Able To Play Next Song
     Make Sure User Able To Play Previous Song
+
+Search Toptal On Duckduckgo
+    [Documentation]                         Search Toptal and go to Toptal Website
+    Open Browser With Specific URL          https://duckduckgo.com/
+    Make Sure Search Input Are Visible
+    Input On Search
+    Make Sure Search Button Are Visible
+    Click Search Button
+    Make Sure DuckDuckGo Search Are Correct
